@@ -1,0 +1,17 @@
+{
+  "name": "super_conoha_mode",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Execute SUPER CONOHA MODE!!!!!",
+  "icons": {
+    "128": "conoha.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://manage.conoha.jp/*"],
+    "js": ["script.js"]
+  }],
+  "permissions": [
+    "https://manage.conoha.jp/*"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
